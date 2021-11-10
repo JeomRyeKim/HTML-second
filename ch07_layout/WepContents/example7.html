@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ h1,p{
+ 	width:300px;
+ 	border:1px solid red;
+ }
+ .ellipsis{
+ 	white-space:nowrap;/* nowrap : 줄바꿈 안하기 - 여러줄의 뚱뚱한 박스가 한줄의 얇은 박스가 됨. */
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;/* ellipsis : 말줄임표 표시 (...) - 뒤에 적힌 글이 더 있다는 표시 */
+ }
+</style>
+</head>
+<body>
+ <h1 class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+ <p class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+</body>
+</html>
