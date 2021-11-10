@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ div{
+ 	/* 전체 너비 : width + 2 x (margin + border + padding)
+ 	   전체 높이 : height + 2 x (margin + border + padding) */
+ 	width:100px;
+ 	height:100px;
+ 	background-color:red;
+ 	border:20px solid black;
+ 	padding:30px;
+ 	margin:10px;
+ }
+ /* 우선순위로 적용 */
+ /* margin 속성은 위 아래 겹치는 경우 큰 마진만 인정함. */
+ #up{margin:50px;}/* 두 div의 위, 아래 간격이 80이 아니라 50으로 적용되어 떨어져있음 */
+ #down{margin:30px;}
+</style>
+</head>
+<body>
+ <div id="up">hello Lorem ipsum dolor sit amt.</div>
+ <div id="down">hello Lorem ipsum dolor sit amt.</div>
+</body>
+</html>

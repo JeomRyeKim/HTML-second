@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.box{
+	width:100px; height:100px;
+	position: absolute;/* 부모요소 중에 relative속성이 없으면 body가 기준이 됨 - 글자와 모형이 겹침. */
+	border:1px solid red;
+}
+/* z-index : z축으로 상하 위치 큰 값이 위로 감 
+			숫자가 클수록 앞에 위치 -> red가 제일 앞 그 뒤에 green, 그 뒤에 blue 순이 됨
+			(예를 들어 배경색을 30초마다 바꾼다 하면 이미지들을 겹쳐놨다가 하나씩 빼는 형식으로 씀) */
+.box:nth-child(1){background-color: red; left: 10px; top: 10px;}
+.box:nth-child(2){background-color: green; left: 50px; top: 50px;}
+.box:nth-child(3){background-color: blue; left: 90px; top: 90px;}
+</style>
+</head>
+<body>
+<h1>Lorem ipsum dolor amet</h1>
+<div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</div>
+<h1>Lorem ipsum dolor amet</h1>
+</body>
+</html>

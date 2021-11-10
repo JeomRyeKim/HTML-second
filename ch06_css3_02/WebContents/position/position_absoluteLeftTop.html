@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.box{
+	width:100px; height:100px;
+	position: absolute;
+	border:1px solid red;
+}
+/* 그린과 블루의 위치를 움직이니 앞에 가려졌던 red,green이 bule뒤로 드러남
+	(블루에 그린이 가려지고, 그린에 레드가 가려짐) */
+.box:nth-child(1){background-color: red; left: 10px; top: 10px;}
+.box:nth-child(2){background-color: green; left: 50px; top: 50px;}
+.box:nth-child(3){background-color: blue; left: 90px; top: 90px;}
+</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</body>
+</html>
